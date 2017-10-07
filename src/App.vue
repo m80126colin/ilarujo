@@ -1,11 +1,17 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+<div id="app">
+  <router-view></router-view>
+</div>
 </template>
 
 <script>
+import $ from 'jquery'
+
+window.jQuery = window.$ = $
+
+require('semantic-ui-css/semantic.min.js')
+require('semantic-ui-css/semantic.min.css')
+
 export default {
   name: 'app'
 }
